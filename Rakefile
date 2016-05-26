@@ -1,6 +1,7 @@
 require_relative 'collection.rb'
 
 task :beta do
+  raise "Provide a collection id" if ENV["COLLECTION_ID"].to_s.length == 0
   c = TweetCollectionManager::Collection.new(collection_id: ENV["COLLECTION_ID"])
 
   tweets = File.read("tweets.txt").split("\n")
