@@ -18,3 +18,5 @@ task :beta do
     sleep 1
   end
 end
+
+task :default => [:beta]
