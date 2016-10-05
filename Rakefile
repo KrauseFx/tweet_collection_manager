@@ -17,6 +17,7 @@ task :beta do
     end
     sleep 1
   end
+  puts "Done: https://twitter.com/KrauseFx/timelines/634365663847546884"
 end
 
 task :default => [:beta]
